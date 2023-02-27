@@ -15,6 +15,15 @@ public class Lab {
      * @return true if there is a successful login, and false otherwise.
      */
     public boolean login(String username, String password){
-        return false;
+        boolean x = false;
+
+        if(username=="admin" && password=="qwerty"){
+            x = true;
+        } else if (username=="user" && password=="password"){
+            x = true;
+        } else {
+            x = false;
+        }
+        return x;
     }
 }
